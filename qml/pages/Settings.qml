@@ -61,7 +61,7 @@ Page{
             }
             TextSwitch{
                 checked: DB.getParameter("slideInteractive")===1
-                text: qsTr("Swipe throught difficulty")
+                text: qsTr("Swipe through difficulty")
                 description: checked?qsTr("Swipe is enabled"):qsTr("Swipe disable. Click on a difficulty name to load it")
                 onClicked: DB.setParameter("slideInteractive", checked ? 1 : 0)
             }
